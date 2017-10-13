@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#4c9ef1</color>
+
+    <color name="colorPrimary">#be1717</color>
+
+    <color name="colorPrimaryDark">#a31311</color>
+
+    <color name="country_button">#454545</color>
+    <color name="black">#000000</color>
+    <color name="filter_brand">#3295dc</color>
+
+    <color name="filterline">#8b8b8b</color>
+    <color name="red">#f22121</color>
+    <color name="white">#ffffff</color>
+</resources>

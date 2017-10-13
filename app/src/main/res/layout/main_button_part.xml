@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <Button
+        android:id="@+id/shiyong"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="@dimen/main_button_heigh"
+        android:layout_marginLeft="@dimen/main_buuton_marinleft"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/main_button_bg"
+        android:text="SUV" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shiyong"
+        android:layout_marginLeft="@dimen/main_buuton_marinleft"
+        android:gravity="center"
+        android:text="@string/shiyong" />
+
+    <Button
+        android:id="@+id/jujiabibei"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="@dimen/main_button_heigh"
+        android:layout_marginLeft="@dimen/x120"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/main_button_bg"
+        android:text="@string/xiaoxingche" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jujiabibei"
+        android:layout_marginLeft="@dimen/x120"
+        android:gravity="center"
+        android:text="@string/jujiabibei" />
+
+    <Button
+        android:id="@+id/chuangye"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="@dimen/main_button_heigh"
+        android:layout_marginLeft="@dimen/x220"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@drawable/main_button_bg"
+        android:text="面包车" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chuangye"
+        android:layout_marginLeft="@dimen/x220"
+        android:gravity="center"
+        android:text="@string/chuangye" />
+
+    <Button
+        android:id="@+id/laoban"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="@dimen/main_button_heigh"
+        android:layout_marginLeft="@dimen/main_buuton_marinleft"
+        android:layout_marginTop="@dimen/x70"
+        android:background="@drawable/main_button_bg"
+        android:text="豪华车" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/laoban"
+        android:layout_marginLeft="@dimen/main_buuton_marinleft"
+        android:gravity="center"
+        android:text="@string/laoban" />
+
+    <Button
+        android:id="@+id/xinnengyuan"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="@dimen/main_button_heigh"
+        android:layout_marginLeft="@dimen/x120"
+        android:layout_marginTop="@dimen/x70"
+        android:background="@drawable/main_button_bg"
+        android:text="节油能手" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xinnengyuan"
+        android:layout_marginLeft="@dimen/x120"
+        android:gravity="center"
+        android:text="@string/xinnengyuan" />
+
+    <Button
+        android:id="@+id/liaomei"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="@dimen/main_button_heigh"
+        android:layout_marginLeft="@dimen/x220"
+        android:layout_marginTop="@dimen/x70"
+        android:background="@drawable/main_button_bg"
+        android:text="跑车" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="@dimen/main_buuton_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liaomei"
+        android:layout_marginLeft="@dimen/x220"
+        android:gravity="center"
+        android:text="@string/liaomei" />
+</RelativeLayout>

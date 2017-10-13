@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+
+    <string name="Korea">韩国</string>
+
+    <string name="_1_0">1.0及以下</string>
+
+    <string name="_1_1_1_6">1.1-1.6</string>
+
+    <string name="_1_7_2_0">1.7-2.0</string>
+
+    <string name="_2_1_2_5l">2.1-2.5L</string>
+
+    <string name="_2_6_3_0l">2.6-3.0L</string>
+
+    <string name="_3_1_4_0l">3.1-4.0L</string>
+
+    <string name="_4_0">4.0以上</string>
+
+
+    <string name="america">美国</string>
+
+    <string name="app_name">car</string>
+
+
+    <string name="back">后退</string>
+
+    <string name="biansuxiang">变速箱</string>
+
+
+    <string name="chadianshihundong">插电式混动</string>
+
+    <string name="chaiyou">柴油</string>
+
+
+    <string name="cheshenesp">车身ESP</string>
+
+    <string name="china">中国</string>
+
+    <string name="choosecarserise">选择车系</string>
+
+    <string name="choosed">已选条件</string>
+
+    <string name="chuangye">创业伙伴</string>
+
+    <string name="chundiandong">纯电动</string>
+
+    <string name="daSUV">大型SUV</string>
+
+    <string name="daocheleida">倒车雷达</string>
+
+    <string name="daocheyingxiang">倒车影像</string>
+
+    <string name="daxingche">大型车</string>
+
+    <string name="diandongtianchuang">电动天窗</string>
+
+    <string name="diandongtiaojiezuoyi">电动调节坐骑</string>
+
+    <string name="dingsuxunhang">定速巡航</string>
+
+    <string name="duogongnengfangxiangpan">多功能方向盘</string>
+
+    <string name="english">英国</string>
+
+    <string name="enter">确定</string>
+
+    <string name="filtercar">条件选车</string>
+
+    <string name="fivesite">5座</string>
+
+    <string name="foursite">4座</string>
+
+    <string name="french">法国</string>
+
+    <string name="germany">德国</string>
+
+    <string name="gpsdaohang">GPS导航</string>
+
+    <string name="guobie">国别</string>
+
+    <string name="hezi">合资</string>
+
+    <string name="houqu">后驱</string>
+
+    <string name="huoche">货车</string>
+
+    <string name="janpanese">日本</string>
+
+    <string name="jibie">级别</string>
+
+    <string name="jiegou">结构</string>
+
+    <string name="jincouSUV">紧凑型SUV</string>
+
+    <string name="jincouxing">紧凑型</string>
+
+    <string name="jinkou">进口</string>
+
+    <string name="jinqixingshi">进气形式</string>
+
+    <string name="jixiezengya">机械增压</string>
+
+    <string name="jujiabibei">居家必备</string>
+
+    <string name="keche">客车</string>
+
+    <string name="lanyachezaidianhua">蓝牙/车载电话</string>
+
+    <string name="laoban">老板座驾</string>
+
+    <string name="leddadeng">LED大灯</string>
+
+    <string name="liangxiang">两厢</string>
+
+    <string name="liaomei">撩妹利器</string>
+
+    <string name="load_more_text">正在加载...</string>
+
+    <string name="lvxingban">旅行版</string>
+
+    <string name="mpv">MPV</string>
+
+    <string name="nengyuan">能源</string>
+
+    <string name="other_country">其他</string>
+
+    <string name="pailiang">小型车</string>
+
+    <string name="pailiang1.0">1.0及以下</string>
+
+    <string name="pailiang1.1">1.1–1.6L</string>
+
+    <string name="pailiang1.7">1.7–2.0L</string>
+
+    <string name="pailiang2.1">2.1–2.5L</string>
+
+    <string name="pailiang2.6">2.6–3.0L</string>
+
+    <string name="pailiang3.1">3.1–4.0L</string>
+
+    <string name="pailiang4.0">4.0L以上</string>
+
+    <string name="paoche">跑车</string>
+
+    <string name="peizhi">配置</string>
+
+    <string name="pikache">皮卡车</string>
+
+    <string name="price">价格</string>
+
+    <string name="qianqu">前驱</string>
+
+    <string name="qingka">轻卡</string>
+
+    <string name="qiyou">汽油</string>
+
+    <string name="quanjingtianchuang">全景天窗</string>
+
+    <string name="quanzidongkongtiao">全自动空调</string>
+
+    <string name="qudongfangshi">驱动方式</string>
+
+    <string name="remake">重置</string>
+
+    <string name="rijianxingchedeng">日间行车灯</string>
+
+    <string name="ruandingchangpengche">软顶敞篷车</string>
+
+    <string name="sanxiang">3厢</string>
+
+    <string name="sevensite">7座</string>
+
+    <string name="sevensiteup">7座以上</string>
+
+    <string name="shanqidadeng">氙气大灯</string>
+
+    <string name="shengchanchangshang">生产厂商</string>
+
+    <string name="shiyong">实用大空间</string>
+
+    <string name="shoudong">手动</string>
+
+    <string name="shouziyiti">手自一体</string>
+
+    <string name="shuanglihe">双离合</string>
+
+    <string name="siqu">四驱</string>
+
+    <string name="sixsite">6座</string>
+
+    <string name="twosite">2座</string>
+
+    <string name="weika">微卡</string>
+
+    <string name="weimian">微面</string>
+
+    <string name="weixingche">微型车</string>
+
+    <string name="wolunzengya">涡轮增压</string>
+
+    <string name="wujibiansu">无级变速</string>
+
+    <string name="wuyaoshiqidong">无钥匙启动</string>
+
+    <string name="xianbei">掀背</string>
+
+    <string name="xiaoSUV">小型SUV</string>
+
+    <string name="xiaoxingche">小型车</string>
+
+    <string name="xinnengyuan">新能源</string>
+
+    <string name="xuanzepinpai">选择品牌</string>
+
+    <string name="yingdingchangpengche">硬顶敞篷车</string>
+
+    <string name="yingdingpaoche">硬顶跑车</string>
+
+    <string name="youdianhunhe">油电混动</string>
+
+    <string name="zengchengshi">增程式</string>
+
+    <string name="zhenpizuoyi">真皮坐椅</string>
+
+    <string name="zhongSUV">中SUV</string>
+
+    <string name="zhongdaSUV">中大型SUV</string>
+
+    <string name="zhongdaxing">中大型</string>
+
+    <string name="zhongxingche">中型车</string>
+
+    <string name="zidongpoche">自动泊车</string>
+
+    <string name="ziranxiqi">自然吸气</string>
+
+    <string name="zizhu">自主</string>
+
+    <string name="zuoweishu">座位数</string>
+
+    <string name="zuoyijiare">座椅加热</string>
+
+</resources>

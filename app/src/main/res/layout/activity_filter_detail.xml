@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/filter_choose_enter_button_bg"
+        android:text="@string/enter"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_car_filter_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/filtercar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:text="@string/filtercar"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/remake"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="@string/remake"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/choosed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:text="@string/choosed"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/filterline" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/price"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <io.apptik.widget.MultiSlider
+                    android:id="@+id/range_slider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:range1="@drawable/seekbarshape"
+                    app:stepsThumbsApart="1"
+                    app:thumbNumber="2" />
+
+                <Button
+                    android:id="@+id/xuanzepinpai"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/filter_choose_brand_button_bg"
+                    android:text="@string/xuanzepinpai"
+                    android:textColor="#0066ff" />
+
+                <TextView
+                    android:id="@+id/jibie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/jibie"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:columnCount="3">
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/weixingche"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a1weixing"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/weixingche"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/xiaoxingche"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a2xiaoxing"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/xiaoxingche"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/jincouxing"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a3jincou"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/jincouxing"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/zhongxingche"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a4zhongxing"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/zhongxingche"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/zhongdaxing"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a5zhongdaxing"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/zhongdaxing"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/xiaoSUV"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a7suv"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/xiaoSUV"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/jincouSUV"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a7suv"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/jincouSUV"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/zhongSUV"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a7suv"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/zhongSUV"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/zhongdaSUV"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a7suv"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/zhongdaSUV"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/daSUV"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a7suv"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/daSUV"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/mpv"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a8mpv"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/mpv"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/paoche"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a9paoche"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/paoche"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/pikache"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a10pika"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/pikache"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/weimian"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a11weimian"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/weimian"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/weika"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_margintop"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a12weika"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/weika"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/qingka"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a13qingke"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/qingka"
+                        android:textColor="@color/black" />
+
+                    <com.tianran.car.CarCheckButton
+                        android:id="@+id/daxingche"
+                        android:layout_width="@dimen/filter_car_type_button_width"
+                        android:layout_height="@dimen/filter_car_type_button_hight"
+                        android:layout_marginLeft="@dimen/filter_car_marginleft"
+                        android:layout_marginTop="@dimen/filter_car_margintop"
+                        android:background="@drawable/filter_car_type_button_bg"
+                        android:drawableTop="@drawable/a6daxing"
+                        android:padding="@dimen/filter_car_type_padding"
+                        android:text="@string/daxingche"
+                        android:textColor="@color/black" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/jibie"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:columnCount="4">
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/china"
+                        android:layout_width="@dimen/filter_country_button_width"
+                        android:layout_height="@dimen/filter_country_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/china"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/germany"
+                        android:layout_width="@dimen/filter_country_button_width"
+                        android:layout_height="@dimen/filter_country_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/germany"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/america"
+                        android:layout_width="@dimen/filter_country_button_width"
+                        android:layout_height="@dimen/filter_country_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/america"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/janpanese"
+                        android:layout_width="@dimen/filter_country_button_width"
+                        android:layout_height="@dimen/filter_country_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/janpanese"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/french"
+                        android:layout_width="@dimen/filter_country_button_width"
+                        android:layout_height="@dimen/filter_country_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/french"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/Korea"
+                        android:layout_width="@dimen/filter_country_button_width"
+                        android:layout_height="@dimen/filter_country_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/Korea"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/english"
+                        android:layout_width="@dimen/filter_country_button_width"
+                        android:layout_height="@dimen/filter_country_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/english"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/other_country"
+                        android:layout_width="@dimen/filter_country_button_width"
+                        android:layout_height="@dimen/filter_country_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/other_country"
+                        android:textColor="@color/country_button" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/biansuxiang"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+             android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/x8"
+                    android:columnCount="4">
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/shoudong"
+                        android:layout_width="@dimen/filter_biansu_button_width"
+                        android:layout_height="@dimen/filter_biansu_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/shoudong"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/shouziyiti"
+                        android:layout_width="@dimen/filter_biansu_button_width"
+                        android:layout_height="@dimen/filter_biansu_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/shouziyiti"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/wujibiansu"
+                        android:layout_width="@dimen/filter_biansu_button_width"
+                        android:layout_height="@dimen/filter_biansu_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/wujibiansu"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/shuanglihe"
+                        android:layout_width="@dimen/filter_biansu_button_width"
+                        android:layout_height="@dimen/filter_biansu_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/shuanglihe"
+                        android:textColor="@color/country_button" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/nengyuan"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:columnCount="3">
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/qiyou"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/qiyou"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/chaiyou"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/chaiyou"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/youdianhunhe"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/youdianhunhe"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/chundiandong"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/chundiandong"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/chadianshihundong"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/chadianshihundong"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/zengchengshi"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/zengchengshi"
+                        android:textColor="@color/country_button" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/zuoweishu"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:columnCount="3">
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/_1_0"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/_1_0"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/_1_1_1_6"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/_1_1_1_6"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/_1_7_2_0"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/_1_7_2_0"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/_2_1_2_5l"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/_2_1_2_5l"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/_2_6_3_0l"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/_2_6_3_0l"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/_3_1_4_0l"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/_3_1_4_0l"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/_4_0"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/_4_0"
+                        android:textColor="@color/country_button" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/zuoweishu"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:columnCount="3">
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/twosite"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/twosite"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/foursite"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/foursite"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/fivesite"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/fivesite"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/sixsite"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/sixsite"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/sevensite"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/sevensite"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/sevensiteup"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/sevensiteup"
+                        android:textColor="@color/country_button" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/jiegou"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:columnCount="3">
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/liangxiang"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/liangxiang"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/sanxiang"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/sanxiang"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/xianbei"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/xianbei"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/lvxingban"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/lvxingban"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/yingdingchangpengche"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/yingdingchangpengche"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/ruandingchangpengche"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/ruandingchangpengche"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/yingdingpaoche"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/yingdingpaoche"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/keche"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/keche"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/huoche"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/huoche"
+                        android:textColor="@color/country_button" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/shengchanchangshang"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:columnCount="3">
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/zizhu"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/zizhu"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/hezi"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/hezi"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/jinkou"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/jinkou"
+                        android:textColor="@color/country_button" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/jinqixingshi"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:columnCount="3">
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/ziranxiqi"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/ziranxiqi"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/wolunzengya"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/wolunzengya"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/jixiezengya"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/jixiezengya"
+                        android:textColor="@color/country_button" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/qudongfangshi"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:columnCount="3">
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/qianqu"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/qianqu"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/houqu"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/houqu"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/siqu"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/siqu"
+                        android:textColor="@color/country_button" />
+                </GridLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/peizhi"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:columnCount="3">
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/quanjingtianchuang"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/quanjingtianchuang"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/diandongtianchuang"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/diandongtianchuang"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/diandongtiaojiezuoyi"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/diandongtiaojiezuoyi"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/cheshenesp"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/cheshenesp"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/shanqidadeng"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/shanqidadeng"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/gpsdaohang"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/gpsdaohang"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/dingsuxunhang"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/dingsuxunhang"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/zhenpizuoyi"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/zhenpizuoyi"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/daocheleida"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/daocheleida"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/quanzidongkongtiao"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/quanzidongkongtiao"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/duogongnengfangxiangpan"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/duogongnengfangxiangpan"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/leddadeng"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/leddadeng"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/daocheyingxiang"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/daocheyingxiang"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/wuyaoshiqidong"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/wuyaoshiqidong"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/zuoyijiare"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/zuoyijiare"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/rijianxingchedeng"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/rijianxingchedeng"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/zidongpoche"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/zidongpoche"
+                        android:textColor="@color/country_button" />
+
+                    <com.tianran.car.CheckButton
+                        android:id="@+id/lanyachezaidianhua"
+                        android:layout_width="@dimen/filter_normal_button_width"
+                        android:layout_height="@dimen/filter_normal_button_hight"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/filter_button_bg"
+                        android:text="@string/lanyachezaidianhua"
+                        android:textColor="@color/country_button" />
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

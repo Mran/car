@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.tianran.car" platformBuildVersionCode="24" platformBuildVersionName="7.0">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="24" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.tianran.car.Myapplication" android:debuggable="true" android:allowBackup="true" android:supportsRtl="true">
+        <activity android:name="com.tianran.car.main.MainActivity" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tianran.car.carbranddetail.CarBrandDetailActivity" android:launchMode="singleTop" />
+        <activity android:name="com.tianran.car.carsummerydetail.CarSummeryDetailActivity" android:launchMode="standard" />
+        <activity android:name="com.tianran.car.carconfig.CarConfigActivity" android:launchMode="standard" />
+        <activity android:name="com.tianran.car.carsearch.CarSearchActivity" android:launchMode="standard" />
+        <activity android:name="com.tianran.car.carsearch.CarSearchResultActivity" android:launchMode="standard" />
+        <activity android:name="com.tianran.car.carsearch.CarSelectActivity" android:launchMode="standard" />
+        <activity android:name="com.tianran.car.carbymark.CarByMarkActivity" android:launchMode="standard" />
+    </application>
+</manifest>
