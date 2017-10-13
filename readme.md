@@ -1,11 +1,11 @@
 ## CAR
 数据接口采集自汽车之家 
 
-具体看截图
+
 ### 主界面
 ![](https://ws1.sinaimg.cn/large/005IAkpWgy1fkggb372d4j30u01hcaew.jpg) 
 
-###　车型页面　
+### 车型页面　
 ![](https://ws1.sinaimg.cn/large/005IAkpWgy1fkggb2g081j30u01hcts4.jpg)　
 ![](https://ws1.sinaimg.cn/large/005IAkpWgy1fkggb3i3zxj30u01hcqdf.jpg)　
 
